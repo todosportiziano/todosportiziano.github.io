@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-family !important;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $global-color;
+    scroll-behavior: smooth;
+
+    @media screen and(min-width: $screen-size-m) {
+        font-size: 18px;
+    }
+
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.tm-background-contrast {
+    background: darken(#f4f4f4, 5%);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+* + p {
+    margin-top: 1rem;
+}
+
+h1, .tm-h1 {
+    font-size: 3rem;
+}
+
+h2, .tm-h2 {
+    font-size: 2.25rem;
+}
+
+h3, .tm-h3 {
+    font-size: 1.25rem;
+    @media screen and (min-width: $screen-size-m) {
+        font-size: 1.75rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.5rem;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: $global-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
+}
+
+.tm-margin-remove {
+    margin: 0 !important;
+}
+
+.tm-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $screen-size-l) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.tm-grid {
+    margin-left: -2.5rem;
+
+    & > div {
+        padding-left: 2.5rem;
+    }
+
+    & > .tm-grid-margin {
+        margin-top: 2.5rem;
+    }
+
+}
+
+.tm-hidden {
+    display: none;
+}
+
+.tm-container-expanded {
+    max-width: none;
+}
+
+.tm-flex {
+    display: flex;
+}
+
+.tm-flex-middle {
+    align-items: center;
+}
+
+.tm-flex-between {
+    justify-content: space-between;
+}
+
+.tm-width-1-1 {
+    width: 100%;
+}
+
+.tm-width-1-2-from-m {
+    @media screen and (min-width: $screen-size-m) {
+        width: 50%;
+    }
+}
+
+.tm-block-module {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+    @media screen and (min-width: $screen-size-m) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+    }
+}
+
+.tm-text-nowrap {
+    white-space: nowrap !important;
+}
+
+.tm-max-width {
+    @media (min-width: 400px) and (max-width: $screen-size-m) {
+        max-width: 350px;
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,185 @@
+@import 'template/variables.scss';
+@import 'template/pre-setting.scss';
+@import 'template/navegation-menu.scss';
+@import 'template/button.scss';
+@import 'template/visibility.scss';
+@import 'template/mobile-panel.scss';
+
+// Main banner
+.tm-block-main-banner {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    background: linear-gradient(to top, $global-blue-color 10%, $global-teal-color 60%);
+
+    * {
+        color: #fff;
+    }
+
+    @media screen and (min-width: $screen-size-m) {
+        padding-top: 12.5rem;
+        padding-bottom: 12.5rem;
+    }
+
+    h2 {
+        font-size: 4rem !important;
+        line-height: 1;
+    }
+
+}
+
+
+// Presentation
+.tm-block-presentation {
+
+    .uk-grid {
+
+        & > div:first-child {
+            order: 2;
+            @media screen and (min-width: $screen-size-m) {
+                width: 60%;
+                order: 1;
+            }
+        }
+
+        & > div:last-child {
+            order: 1;
+            @media screen and (min-width: $screen-size-m) {
+                width: 40%;
+                order: 2;
+            }
+        }
+
+    }
+
+}
+
+
+// Banner
+.tm-block-banner {
+    background: linear-gradient(to bottom, $global-teal-color 50%, $global-blue-color );
+
+    h2 {
+        color: #fff;
+    }
+
+}
+
+
+// Donations
+.tm-block-donations {
+
+    .tm-payments-grid {
+        .uk-panel {
+            padding: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            text-align: left !important;
+    
+            p, ul {
+                margin: 0;
+            }
+    
+            ul {
+                margin-top: 10px;
+                padding-left: 0;
+                list-style: none;
+            }
+    
+            & + .uk-panel {
+                margin-top: 1rem;
+            }
+    
+        }
+    }
+
+}
+
+
+// Mercadopago
+.tm-block-banner-mercadopago {
+    background: linear-gradient(to top, #009ee3 10%, #0181b8 60%);
+    
+    * {
+        color: #fff;
+    }
+
+    h2 {
+        color: #fff;
+
+        @media screen and (min-width: $screen-size-m) {
+            font-size: 3rem !important;
+        }
+
+    }
+
+    .tm-heading-mercadopago-buttons {
+        font-size: 1.5rem !important;
+    }
+
+    .qr-code {
+        border-radius: 50%;
+        
+        @media screen and (max-width: $screen-size-m) {
+            max-width: 200px;
+        }
+
+    }
+
+}
+
+// Help module
+.tm-block-help {
+
+    .at-share-btn {
+        margin-bottom: 0;
+
+        & + .at-share-btn {
+            margin-left: 10px;
+        }
+    }
+
+    .tm-instagram-link {
+        transition: all 0.2s;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+
+    }
+
+    .tm-instagram-icon {
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+}
+
+
+// Thank you section
+.tm-block-thank-you {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to top, $global-blue-color 0%, $global-teal-color 50%);
+    
+    * {
+        color: #fff;
+    }
+
+    h1 {
+        @media screen and (min-width: $screen-size-m) {
+            font-size: 4.5rem;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .uk-container {
+        max-width: 800px;
+    }
+
+}

@@ -1,0 +1,59 @@
+// Visible
+
+.tm-visible-from-s {
+    display: none;
+    @media screen and (min-width: $screen-size-s) {
+        display: initial;
+    }
+}
+
+.tm-visible-from-m {
+    display: none;
+    @media screen and (min-width: $screen-size-m) {
+        display: initial;
+    }
+}
+
+.tm-visible-from-l {
+    display: none;
+    @media screen and (min-width: $screen-size-l) {
+        display: initial;
+    }
+}
+
+.tm-visible-from-xl {
+    display: none;
+    @media screen and (min-width: $screen-size-xl) {
+        display: initial;
+    }
+}
+
+// Hiddens
+
+.tm-hidden-from-s {
+    display: initial;
+    @media screen and (min-width: $screen-size-s) {
+        display: none;
+    }
+}
+
+.tm-hidden-from-m {
+    display: initial;
+    @media screen and (min-width: $screen-size-m) {
+        display: none;
+    }
+}
+
+.tm-hidden-from-l {
+    display: initial;
+    @media screen and (min-width: $screen-size-l) {
+        display: none;
+    }
+}
+
+.tm-hidden-from-xl {
+    display: initial;
+    @media screen and (min-width: $screen-size-xl) {
+        display: none;
+    }
+}
